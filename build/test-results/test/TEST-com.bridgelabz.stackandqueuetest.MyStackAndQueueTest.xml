@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.bridgelabz.stackandqueuetest.MyStackAndQueueTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-03-30T10:08:35" hostname="DESKTOP-2DC5FKU" time="0.029">
+  <properties/>
+  <testcase name="given3NumberswhenAddedtoStackshouldhavelastAddedNode()" classname="com.bridgelabz.stackandqueuetest.MyStackAndQueueTest" time="0.029"/>
+  <system-out><![CDATA[56->30->70
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

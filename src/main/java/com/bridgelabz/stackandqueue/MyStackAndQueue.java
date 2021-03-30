@@ -1,7 +1,17 @@
 package com.bridgelabz.stackandqueue;
 
 public class MyStackAndQueue {
-    public static void main(String[] args) {
-        System.out.println("Welcome To The Stack And Queue Program");
+     MyLinkedList myLinkedList;
+
+    public MyStackAndQueue(){
+        this.myLinkedList=new MyLinkedList();
     }
+    public void push(INode myNode){
+        myLinkedList.add(myNode);
+    }
+
+    public void printStack() {
+        myLinkedList.printNodes();
+    }
+
 }

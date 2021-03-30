@@ -21,4 +21,6 @@ public class MyStackAndQueue {
 
     public void enqueu(INode myNode){ myLinkedList.append(myNode); }
 
+    public INode dequeue(){ return myLinkedList.pop(); }
+
 }

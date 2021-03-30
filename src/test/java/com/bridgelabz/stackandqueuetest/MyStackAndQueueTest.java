@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 public class MyStackAndQueueTest {
 
     @Test
-    public void given3Numbers_whenAddedtoStack_ShouldHaveLastAddedNode(){
+    public void given3Numbers_whenAddedToStack_ShouldHaveLastAddedNode(){
         MyNode<Integer> myFirstNode = new MyNode<>(70);
         MyNode<Integer> mySecondNode = new MyNode<>(30);
         MyNode<Integer> myThirdNode = new MyNode<>(56);
@@ -23,7 +23,7 @@ public class MyStackAndQueueTest {
     }
 
     @Test
-    public void given3NumbersinStack_whenPopped_ShouldMatchWithLastAddedNode(){
+    public void given3NumbersInStack_whenPopped_ShouldMatchWithLastAddedNode(){
         MyNode<Integer> myFirstNode = new MyNode<>(70);
         MyNode<Integer> mySecondNode = new MyNode<>(30);
         MyNode<Integer> myThirdNode = new MyNode<>(56);
@@ -39,7 +39,7 @@ public class MyStackAndQueueTest {
     }
 
     @Test
-    public void given3Numbers_whenAddedtoQueue_ShouldHaveAppendedNode(){
+    public void given3Numbers_whenAddedToQueue_ShouldHaveAppendedNode(){
         MyNode<Integer> myFirstNode = new MyNode<>(56);
         MyNode<Integer> mySecondNode = new MyNode<>(30);
         MyNode<Integer> myThirdNode = new MyNode<>(70);
@@ -50,5 +50,19 @@ public class MyStackAndQueueTest {
         myQueue.enqueu(myThirdNode);
 
         myQueue.printStack();
+    }
+
+    @Test
+    public void given3Numbers_whenDequeueToQueue_ShouldPopFrontNode(){
+        MyNode<Integer> myFirstNode = new MyNode<>(56);
+        MyNode<Integer> mySecondNode = new MyNode<>(30);
+        MyNode<Integer> myThirdNode = new MyNode<>(70);
+        MyStackAndQueue myQueue = new MyStackAndQueue();
+        myQueue.enqueu(myFirstNode);
+        myQueue.enqueu(mySecondNode);
+        myQueue.enqueu(myThirdNode);
+        INode result = myQueue.dequeue();
+        myQueue.printStack();
+        Assertions.assertEquals(myFirstNode,result);
     }
 }

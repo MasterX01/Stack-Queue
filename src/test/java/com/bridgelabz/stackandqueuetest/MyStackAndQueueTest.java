@@ -28,11 +28,27 @@ public class MyStackAndQueueTest {
         MyNode<Integer> mySecondNode = new MyNode<>(30);
         MyNode<Integer> myThirdNode = new MyNode<>(56);
         MyStackAndQueue myStack = new MyStackAndQueue();
+
         myStack.push(myFirstNode);
         myStack.push(mySecondNode);
         myStack.push(myThirdNode);
         INode pop = myStack.pop();
+
         myStack.printStack();
         Assertions.assertEquals(myThirdNode,pop);
+    }
+
+    @Test
+    public void given3Numbers_whenAddedtoQueue_ShouldHaveAppendedNode(){
+        MyNode<Integer> myFirstNode = new MyNode<>(56);
+        MyNode<Integer> mySecondNode = new MyNode<>(30);
+        MyNode<Integer> myThirdNode = new MyNode<>(70);
+        MyStackAndQueue myQueue = new MyStackAndQueue();
+
+        myQueue.enqueu(myFirstNode);
+        myQueue.enqueu(mySecondNode);
+        myQueue.enqueu(myThirdNode);
+
+        myQueue.printStack();
     }
 }

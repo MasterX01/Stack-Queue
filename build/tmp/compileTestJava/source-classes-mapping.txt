@@ -1,6 +1,6 @@
 com/bridgelabz/stackandqueuetest/MyNodeTest.java
  com.bridgelabz.stackandqueuetest.MyNodeTest
-com/bridgelabz/stackandqueuetest/MyStackAndQueueTest.java
- com.bridgelabz.stackandqueuetest.MyStackAndQueueTest
 com/bridgelabz/stackandqueuetest/MyLinkedListTest.java
  com.bridgelabz.stackandqueuetest.MyLinkedListTest
+com/bridgelabz/stackandqueuetest/MyStackAndQueueTest.java
+ com.bridgelabz.stackandqueuetest.MyStackAndQueueTest

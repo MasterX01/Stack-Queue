@@ -6,6 +6,7 @@ public class MyStackAndQueue {
     public MyStackAndQueue(){
         this.myLinkedList=new MyLinkedList();
     }
+
     public void push(INode myNode){
         myLinkedList.add(myNode);
     }
@@ -13,5 +14,9 @@ public class MyStackAndQueue {
     public void printStack() {
         myLinkedList.printNodes();
     }
+
+    public INode peak() { return myLinkedList.head; }
+
+    public INode pop(){ return myLinkedList.pop(); }
 
 }
